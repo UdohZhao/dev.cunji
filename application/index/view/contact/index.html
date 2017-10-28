@@ -1,0 +1,166 @@
+{include file="layouts/header" /}
+
+<!--引用百度地图API-->
+<style type="text/css">
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+
+  <div id="fh5co-contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-md-push-1 animate-box">
+
+          <div class="fh5co-contact-info">
+            <h3>联系方式</h3>
+            <ul>
+              <li class="address">重庆市江北区大石坝东原D7<br>三期4号写字楼2003号</li>
+              <li class="phone"><a href="tel://18423031898">+ 18423031898</a></li>
+              <li class="email"><a href="mailto:zhaojian@getcunji.com">zhaojian@getcunji.com</a></li>
+              <li class="url"><a href="http://getcunji.com">getcunji.com</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="col-md-6 animate-box">
+          <h3>详细地图</h3>
+          <!-- <form action="#">
+            <div class="row form-group">
+              <div class="col-md-6">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" class="form-control" placeholder="Your firstname">
+              </div>
+              <div class="col-md-6">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" class="form-control" placeholder="Your lastname">
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label for="email">Email</label>
+                <input type="text" id="email" class="form-control" placeholder="Your email address">
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Send Message" class="btn btn-primary">
+            </div>
+
+          </form> -->
+
+           <!--百度地图容器-->
+           <div style="width:700px;height:500px;border:#ccc solid 1px;" id="dituContent"></div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div id="fh5co-testimonial" class="fh5co-bg-section">
+    <div class="container">
+      <div class="row animate-box row-pb-md">
+        <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+          <span>You deserved happiness</span>
+          <h2>心灵感知</h2>
+          <p>Do not say that opportunities never come. It did come but you just weren’t willing to give up what you had.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 animate-box">
+          <div class="testimonial">
+            <blockquote>
+              <p>&ldquo;要自由的人，其实要承担最大的责任，选别人少走的路的人，背负最沉重的枷锁。从来就没有不需要抵抗重力的飞翔。&rdquo;</p>
+              <p class="author"> <img src="/static/template/images/person-1.png" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"> <cite>&mdash; 存己001号</cite></p>
+            </blockquote>
+          </div>
+
+          <div class="testimonial">
+            <blockquote>
+              <p>&ldquo;美好的东西都会掺杂虚伪的成分。比如小说是虚构的，食物是加了作料才好美味的。真实很冰冷，艺术需加工。任何一样东西若是完完整整地呈现出来，那样东西会很乏味，也很冰冷。但如果经过我们加入虚拟的、虚幻元素过后，那它就会变成美好的。虚伪创造美。&rdquo;</p>
+              <p class="author"> <img src="/static/template/images/person-1.png" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"> <cite>&mdash; 存己002号</cite></p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="col-md-6 animate-box">
+          <div class="testimonial">
+            <blockquote>
+              <p>&ldquo;第一等智慧的人都是自相矛盾的，两个原则没有任何一个是对的，只有在具体的时间和地点，做出的唯一正好的判断，才是对的。中庸，是恰到好处&rdquo;</p>
+              <p class="author"> <img src="/static/template/images/person-1.png" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"> <cite>&mdash; 存己003号</cite></p>
+            </blockquote>
+          </div>
+
+          <div class="testimonial">
+            <blockquote>
+              <p>&ldquo; 每个人的心中都有一匹欲望的野马。你可以去放养它，也可以去圈养它驯养它。但是不要假装它不存在，排斥它。我们每个人都应该自由的，骄傲的活出个生机勃勃的生命。&rdquo;</p>
+              <p class="author"> <img src="/static/template/images/person-1.png" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"> <cite>&mdash; 存己004号</cite></p>
+            </blockquote>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+{include file="layouts/footer" /}
+
+<!-- 百度地图 -->
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+    }
+
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(106.504766,29.576299);//定义一个中心点坐标
+        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+  var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+  map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+  var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+  map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+  var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+  map.addControl(ctrl_sca);
+    }
+
+    initMap();//创建和初始化地图
+</script>
